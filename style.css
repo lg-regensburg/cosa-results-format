@@ -3,10 +3,6 @@ v
 .list {
   font-family:sans-serif;
 }
-td {
-  padding:10px; 
-  border:solid 1px #eee;
-}
 
 input {
   border:solid 1px #ccc;
