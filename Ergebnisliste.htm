@@ -1,0 +1,1823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Ergebnisliste</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!-- 2.5.1 / 23.04.2014 / 23.04.2014 -->
+<style type="text/css">
+body{ width: 770px;}
+body{ font-family: Arial, Helvetica, sans-serif; font-style: normal;}
+table.body{ width: 770px; border: 0px;}
+td.blGrund{ BACKGROUND: white; FONT-FAMILY: Arial, Helvetia, Sans-Serif;
+FONT-SIZE: 13px; PADDING-LEFT: 0px; COLOR: black; }
+td.KopfZ1{ FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 18px;
+FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-ALIGN: center;
+Border-TOP: 1px solid black; BORDER-BOTTOM: 0; COLOR: black; PADDING: 0px; }
+td.KopfZ11{ FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 18px;
+FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-ALIGN: center;
+Border-TOP: 0; BORDER-BOTTOM: 0; COLOR: black; PADDING: 0px; }
+td.KopfZ12{ FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-SIZE: 18px;
+FONT-STYLE: normal; FONT-WEIGHT: bold; TEXT-ALIGN: center;
+Border-TOP: 0; BORDER-BOTTOM: 1px solid black; COLOR: black; PADDING: 0px; }
+td.KopfZ2{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal;
+font-weight: bold; text-align: left; border-top: 1px solid black; border-bottom: 0px solid black;
+color: black; padding-top: 7px; padding-bottom: 7px; width: 600px; }
+td.KopfZ21{ font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-style: normal;
+font-weight: bold; text-align: left; border-top: 0px solid black; border-bottom: 0px solid black;
+color: black; padding-top:12px; padding-bottom: 0px; width: 600px; }
+td.Stand{ font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal;
+font-weight: bold; text-align: right; border-top: 1px solid black; border-bottom: 1px solid black;
+color: black; padding-top: 0px; padding-bottom: 0px; width: 150px; }
+td.FussZ{ font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal;
+font-weight: bold; TEXT-ALIGN: center; border-top: 1px solid black; 
+border-bottom: 1px solid black; padding-top: 5px; width: 770px; }
+td.AklZ{ font-family: Arial, Helvetia, sans-serif; font-size: 18px; font-style: normal;
+font-weight: bold; text-align: left; border-top: 1px solid black; border-bottom: 0px solid black;
+color: black; padding-top: 5px; padding-bottom: 8px; height: 10px; witdh: 600px; }
+p.Wettb{ font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+font-style: normal; font-weight: bold; text-align: left; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 230px; }
+.blWettb{ font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+font-style: normal; text-align: left; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 330px; }
+.blAKl{ font-family: Arial, Helvetica, sans-serif; font-size: 14px;
+font-style: normal; text-align: left; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 230px; }
+.blBru{ font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+font-style: normal; text-align: right; padding-top: 0px; padding-bottom: 0px;
+color: black; width: 702px; }
+.blNet{ font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+font-style: normal; text-align: right; padding-top: 0px; padding-bottom: 0px;
+color: black; width:  68px; }
+.blZwifrei1w{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 106px; }
+.blZwiTextw{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: right; width: 42px; }
+.blZwifreiEw{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 300px; }
+.blZwifrei1g{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 106px; }
+td.blZwifrei1g{ background-color: #DDDDDD; }
+.blZwiTextg{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: right; width: 42px; }
+td.blZwiTextg{ background-color: #DDDDDD; }
+.blZwifreiEg{ font-family: Arial, Helvetica, sans-serif; font-size:11px;
+font-style: normal; TEXT-ALIGN: left; width: 300px; }
+td.blZwifreiEg{ background-color: #DDDDDD; }
+.blRangw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal;
+TEXT-ALIGN: right; padding: 0px; width: 30px; }
+.blRangBw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 60px; }
+.blStNrw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 42px; }
+.blNamew{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 5px; width: 233px; }
+.blJGw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: center; padding-left: 0px; width: 30px; }
+.blVereinw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 225px; }
+.blLeistw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 65px; }
+.blVereinMaw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 525px; }
+.blMaFreiw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 140px; }
+.blMaFrei1w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 86px; }
+.blMaFrei2w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; width:  20x; }
+.blMaFrei3w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; width: 350x; }
+.blNameMaw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 8px; width: 270px; }
+.blLeistMaw{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 90px; }
+.blVerBer{ font-family: Curier New; font-size: 14px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width:770px; }
+.blRangg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal;
+TEXT-ALIGN: right; padding: 0px; width: 30px; }
+td.blRangg{ background-color: #DDDDDD; }
+.blRangBg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 60px; }
+td.blRangBg{ background-color: #DDDDDD; }
+.blStNrg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; WIDTH: 42px; }
+td.blStNrg{ background-color: #DDDDDD; }
+.blNameg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 5px; width: 233px; }
+td.blNameg{ background-color: #DDDDDD; }
+.blJGg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: center; padding-left: 0px; width: 30px; }
+td.blJGg{ background-color: #DDDDDD; }
+.blVereing{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 225px; }
+td.blVereing{ background-color: #DDDDDD; }
+.blLeistg{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 65px; }
+td.blLeistg{ background-color: #DDDDDD; }
+.blVereinMag{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 4px; width: 525px; }
+td.blVereinMag{ background-color: #DDDDDD; }
+.blMaFreig{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 140px; }
+td.blMaFreig{ background-color: #DDDDDD; }
+.blMaFrei1g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 86px; }
+td.blMaFrei1g{ background-color: #DDDDDD; }
+.blMaFrei2g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width:  20x; }
+td.blMaFrei2g{ background-color: #DDDDDD; }
+.blMaFrei3g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; width:  195x; }
+td.blMaFrei3g{ background-color: #DDDDDD; }
+.blNameMag{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 8px; width: 270px; }
+td.blNameMag{ background-color: #DDDDDD; }
+.blLeistMag{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: right; padding-left: 0px; width: 90px; }
+td.blLeistMag{ background-color: #DDDDDD; }
+.blStMaTnw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 602px; }
+.blStMaTng{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 602px; }
+td.blStMaTng{ background-color: #DDDDDD; }
+.blStMaTnFreiw{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 95px; }
+.blStMaTnFreig{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 95px; }
+td.blStMaTnFreig{ background-color: #DDDDDD; }
+.blDatumMkT2w{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 40px; }
+.blDatumMkT2g{ font-family: Arial, Helvetica, sans-serif; font-size: 13px;
+font-style: normal; TEXT-ALIGN: left; width: 40px; }
+td.blDatumMkT2g{ background-color: #DDDDDD; }
+.blVorjRekFrei{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 85px; }
+.blVorjRekBez{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; width: 130px; }
+.blVorjRekLeist{ font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal;
+TEXT-ALIGN: left; padding: 0px; width: 50px; }
+.blVorjRekDaten{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width: 400px; }
+.blRekordDatum{ font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+font-style: normal; TEXT-ALIGN: left; padding-left: 0px; width:  50px; }
+td.links { border-left-width: 1px; border-left-style:solid; text-vertical-align : top; }
+td.linksZentriert { border-left-width: 1px; border-left-style:solid; text-align : center; text-vertical-align : top; }
+td.linksOben { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; text-vertical-align : top; }
+td.linksObenZentriert { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; text-align : center; text-vertical-align : top; }
+td.linksObenRechts { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; border-right-width: 1px; border-right-style:solid; text-vertical-align : top; }
+td.linksObenRechtsRechts { border-left-width: 1px; border-left-style:solid; border-top-width: 1px; border-top-style:solid; border-right-width: 1px; border-right-style:solid; text-align : right; text-vertical-align : top; }
+td.rechts { border-right-width: 1px; border-right-style:solid; text-vertical-align : top; }
+td.rechtsZentriert { border-right-width: 1px; border-right-style:solid; text-align : center; text-vertical-align : top; }
+td.linksRechts { border-left-width: 1px; border-left-style:solid; border-right-width: 1px; border-right-style:solid; text-vertical-align : top; }
+td.linksRechtsRechts { border-left-width: 1px; border-left-style:solid; border-right-width: 1px; border-right-style:solid; text-align : right; text-vertical-align : top; }
+td.Oben { border-top-width: 1px; border-top-style:solid; text-vertical-align : top; }
+</style>
+
+</head>
+<body><table class="body" cellspacing="0">
+<tbody><tr><td class="KopfZ1">LG Telis Finanz Regensburg</td></tr>
+<tr><td class="KopfZ11">Intersport-Tahedl-Nikolauslauf</td></tr>
+<tr><td class="KopfZ12">am 7.12.2014 in Regensburg - Oberer Wöhrd</td></tr>
+</tbody></table>
+<table class="body" cellspacing="0">
+<tbody><tr><td class="KopfZ21">Ergebnisliste</td></tr></tbody></table><br>
+<table class="body" cellspacing="0"><tbody>
+<tr><td class="KopfZ2">Wettbewerbübersicht</td></tr>
+<tr><td class="blGrund"><a href="#Crosslauf-1.66-km">Crosslauf 1,66 km</a></td></tr>
+<tr><td class="blGrund"><a href="#Crosslauf-5-km">Crosslauf 5 km</a></td></tr>
+</tbody></table>
+<br>
+<table class="body" cellspacing="0"><tbody><tr>
+<td class="AklZ">Crosslauf 1,66 km<a name="Crosslauf-1.66-km"></a></td></tr></tbody></table>
+<table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blWettb">Crosslauf 1,66 km</td>
+<td class="blAKl">Kinder W08</td>
+</tr></tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blRangg">1.</td>
+<td class="blRangBg">/10.</td>
+<td class="blStNrg">177</td>
+<td class="blNameg">Drexler, Franziska</td>
+<td class="blJGg">2006</td>
+<td class="blVereing">SV Hutthurm</td>
+<td class="blLeistg">7:15</td>
+</tr>
+<tr><td class="blRangw">2.</td>
+<td class="blRangBw">/11.</td>
+<td class="blStNrw">353</td>
+<td class="blNamew">Schaefer, Helene</td>
+<td class="blJGw">2007</td>
+<td class="blVereinw">LLC Marathon Regensburg</td>
+<td class="blLeistw">7:17</td>
+</tr>
+<tr><td class="blRangg">3.</td>
+<td class="blRangBg">/22.</td>
+<td class="blStNrg">371</td>
+<td class="blNameg">Reindl, Klara</td>
+<td class="blJGg">2006</td>
+<td class="blVereing">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistg">7:59</td>
+</tr>
+<tr><td class="blRangw">4.</td>
+<td class="blRangBw">/42.</td>
+<td class="blStNrw">501</td>
+<td class="blNamew">Lang, Fiona</td>
+<td class="blJGw">2006</td>
+<td class="blVereinw">SG Waldetzenberg (LG Telis F.)</td>
+<td class="blLeistw">9:07</td>
+</tr>
+<tr><td class="blRangg">5.</td>
+<td class="blRangBg">/45.</td>
+<td class="blStNrg">530</td>
+<td class="blNameg">Wagner, Susanna</td>
+<td class="blJGg">2007</td>
+<td class="blVereing">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistg">9:50</td>
+</tr>
+<tr><td class="blRangw">6.</td>
+<td class="blRangBw">/47.</td>
+<td class="blStNrw">499</td>
+<td class="blNamew">Gunsenheimer, Mary-Lynn</td>
+<td class="blJGw">2007</td>
+<td class="blVereinw">SG Waldetzenberg (LG Telis F.)</td>
+<td class="blLeistw">10:12</td>
+</tr>
+<tr><td class="blRangg">7.</td>
+<td class="blRangBg">/52.</td>
+<td class="blStNrg">255</td>
+<td class="blNameg">Tajsich, Lisa</td>
+<td class="blJGg">2008</td>
+<td class="blVereing">Purendure Laufteam</td>
+<td class="blLeistg">10:37</td>
+</tr>
+</tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blWettb">Crosslauf 1,66 km</td>
+<td class="blAKl">Kinder W09</td>
+</tr></tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blRangg">1.</td>
+<td class="blRangBg">/17.</td>
+<td class="blStNrg">374</td>
+<td class="blNameg">Seidenschwand, Laetitia</td>
+<td class="blJGg">2005</td>
+<td class="blVereing">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistg">7:25</td>
+</tr>
+<tr><td class="blRangw">2.</td>
+<td class="blRangBw">/33.</td>
+<td class="blStNrw">529</td>
+<td class="blNamew">Wagner, Sarah</td>
+<td class="blJGw">2005</td>
+<td class="blVereinw">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistw">8:37</td>
+</tr>
+</tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blWettb">Crosslauf 1,66 km</td>
+<td class="blAKl">Kinder W10</td>
+</tr></tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blRangg">1.</td>
+<td class="blRangBg">/19.</td>
+<td class="blStNrg">111</td>
+<td class="blNameg">Weidner, Kathi</td>
+<td class="blJGg">2004</td>
+<td class="blVereing">TSV Dietfurt (LG Telis Finanz)</td>
+<td class="blLeistg">7:44</td>
+</tr>
+<tr><td class="blRangw">2.</td>
+<td class="blRangBw">/25.</td>
+<td class="blStNrw">583</td>
+<td class="blNamew">Heinzel, Franka</td>
+<td class="blJGw">2004</td>
+<td class="blVereinw">Tristar Regensburg</td>
+<td class="blLeistw">8:08</td>
+</tr>
+<tr><td class="blRangg">3.</td>
+<td class="blRangBg">/29.</td>
+<td class="blStNrg">369</td>
+<td class="blNameg">Liedl, Alexandra</td>
+<td class="blJGg">2004</td>
+<td class="blVereing">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistg">8:27</td>
+</tr>
+<tr><td class="blRangw">4.</td>
+<td class="blRangBw">/31.</td>
+<td class="blStNrw">594</td>
+<td class="blNamew">Lang, Nina</td>
+<td class="blJGw">2004</td>
+<td class="blVereinw">SG Waldetzenberg (LG Telis F.)</td>
+<td class="blLeistw">8:33</td>
+</tr>
+<tr><td class="blRangg">5.</td>
+<td class="blRangBg">/32.</td>
+<td class="blStNrg">372</td>
+<td class="blNameg">Reindl, Therese</td>
+<td class="blJGg">2004</td>
+<td class="blVereing">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistg">8:34</td>
+</tr>
+<tr><td class="blRangw">6.</td>
+<td class="blRangBw">/34.</td>
+<td class="blStNrw">391</td>
+<td class="blNamew">Husmann, Magdalena</td>
+<td class="blJGw">2004</td>
+<td class="blVereinw">St. Marien-Runners</td>
+<td class="blLeistw">8:41</td>
+</tr>
+<tr><td class="blRangg">7.</td>
+<td class="blRangBg">/40.</td>
+<td class="blStNrg">373</td>
+<td class="blNameg">Schyndzielorz, Vanessa</td>
+<td class="blJGg">2004</td>
+<td class="blVereing">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistg">8:57</td>
+</tr>
+<tr><td class="blRangw">8.</td>
+<td class="blRangBw">/41.</td>
+<td class="blStNrw">375</td>
+<td class="blNamew">Urban, Kati</td>
+<td class="blJGw">2004</td>
+<td class="blVereinw">SG Post Süd (LG Telis Finanz)</td>
+<td class="blLeistw">9:05</td>
+</tr>
+<tr><td class="blRangg">9.</td>
+<td class="blRangBg">/55.</td>
+<td class="blStNrg">383</td>
+<td class="blNameg">Wespa, Lilli</td>
+<td class="blJGg">2004</td>
+<td class="blVereing">St. Marien-Runners</td>
+<td class="blLeistg">27:46</td>
+</tr>
+</tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+
+<br>
+<table class="body" cellspacing="0"><tbody><tr>
+<td class="AklZ">Crosslauf 5 km<a name="Crosslauf-5-km"></a></td></tr></tbody></table>
+<table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blWettb">Crosslauf 5 km</td>
+<td class="blAKl">Männer</td>
+</tr></tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blRangg">1.</td>
+<td class="blRangBg">/1.</td>
+<td class="blStNrg">307</td>
+<td class="blNameg">Orth, Florian</td>
+<td class="blJGg">1989</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">14:28</td>
+</tr>
+<tr><td class="blRangw">2.</td>
+<td class="blRangBw">/2.</td>
+<td class="blStNrw">308</td>
+<td class="blNamew">Plinke, Felix</td>
+<td class="blJGw">1989</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">15:01</td>
+</tr>
+<tr><td class="blRangg">3.</td>
+<td class="blRangBg">/3.</td>
+<td class="blStNrg">294</td>
+<td class="blNameg">Boch, Simon</td>
+<td class="blJGg">1994</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">15:04</td>
+</tr>
+<tr><td class="blRangw">4.</td>
+<td class="blRangBw">/4.</td>
+<td class="blStNrw">311</td>
+<td class="blNamew">Sperl, Maximilian</td>
+<td class="blJGw">1994</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">15:21</td>
+</tr>
+<tr><td class="blRangg">5.</td>
+<td class="blRangBg">/5.</td>
+<td class="blStNrg">293</td>
+<td class="blNameg">Beck, Jonas</td>
+<td class="blJGg">1992</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">15:24</td>
+</tr>
+<tr><td class="blRangw">6.</td>
+<td class="blRangBw">/6.</td>
+<td class="blStNrw">313</td>
+<td class="blNamew">Unterholzner, Valentin</td>
+<td class="blJGw">1992</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">15:24</td>
+</tr>
+<tr><td class="blRangg">7.</td>
+<td class="blRangBg">/7.</td>
+<td class="blStNrg">505</td>
+<td class="blNameg">Völkl, Korbinian</td>
+<td class="blJGg">1991</td>
+<td class="blVereing">DJK Weiden</td>
+<td class="blLeistg">15:30</td>
+</tr>
+<tr><td class="blRangw">8.</td>
+<td class="blRangBw">/8.</td>
+<td class="blStNrw">300</td>
+<td class="blNamew">Fischer, Jonas</td>
+<td class="blJGw">1993</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">15:43</td>
+</tr>
+<tr><td class="blRangg">9.</td>
+<td class="blRangBg">/11.</td>
+<td class="blStNrg">135</td>
+<td class="blNameg">Tippmann, Dario</td>
+<td class="blJGg">1994</td>
+<td class="blVereing">LAC Quelle Fürth</td>
+<td class="blLeistg">16:10</td>
+</tr>
+<tr><td class="blRangw">10.</td>
+<td class="blRangBw">/12.</td>
+<td class="blStNrw">8</td>
+<td class="blNamew">Döbereiner, Lukas</td>
+<td class="blJGw">1994</td>
+<td class="blVereinw">Fürth</td>
+<td class="blLeistw">16:12</td>
+</tr>
+<tr><td class="blRangg">11.</td>
+<td class="blRangBg">/14.</td>
+<td class="blStNrg">377</td>
+<td class="blNameg">Hierl, Carl</td>
+<td class="blJGg">1965</td>
+<td class="blVereing">SWC Regensburg</td>
+<td class="blLeistg">16:53</td>
+</tr>
+<tr><td class="blRangw">12.</td>
+<td class="blRangBw">/15.</td>
+<td class="blStNrw">136</td>
+<td class="blNamew">Voigt, Arthur</td>
+<td class="blJGw">1993</td>
+<td class="blVereinw">LAC Quelle Fürth</td>
+<td class="blLeistw">16:56</td>
+</tr>
+<tr><td class="blRangg">13.</td>
+<td class="blRangBg">/18.</td>
+<td class="blStNrg">674</td>
+<td class="blNameg">Ulmer, Ingo</td>
+<td class="blJGg">1974</td>
+<td class="blVereing">Run &amp; Bike Kelheim</td>
+<td class="blLeistg">17:02</td>
+</tr>
+<tr><td class="blRangw">14.</td>
+<td class="blRangBw">/20.</td>
+<td class="blStNrw">133</td>
+<td class="blNamew">Saur, Mario</td>
+<td class="blJGw">1989</td>
+<td class="blVereinw">LAC Quelle Fürth</td>
+<td class="blLeistw">17:12</td>
+</tr>
+<tr><td class="blRangg">15.</td>
+<td class="blRangBg">/23.</td>
+<td class="blStNrg">138</td>
+<td class="blNameg">Weinländer, Gerhard</td>
+<td class="blJGg">1990</td>
+<td class="blVereing">LAC Quelle Fürth</td>
+<td class="blLeistg">17:18</td>
+</tr>
+<tr><td class="blRangw">15.</td>
+<td class="blRangBw">/23.</td>
+<td class="blStNrw">690</td>
+<td class="blNamew">Winklmeier, Markus</td>
+<td class="blJGw">1974</td>
+<td class="blVereinw">Laufstilanalyse.de</td>
+<td class="blLeistw">17:18</td>
+</tr>
+<tr><td class="blRangg">17.</td>
+<td class="blRangBg">/25.</td>
+<td class="blStNrg">504</td>
+<td class="blNameg">Poxleitner, Thomas</td>
+<td class="blJGg">1991</td>
+<td class="blVereing">DJK Weiden</td>
+<td class="blLeistg">17:20</td>
+</tr>
+<tr><td class="blRangw">18.</td>
+<td class="blRangBw">/26.</td>
+<td class="blStNrw">548</td>
+<td class="blNamew">Schröpf, Jürgen</td>
+<td class="blJGw">1972</td>
+<td class="blVereinw">SWC Regensburg</td>
+<td class="blLeistw">17:27</td>
+</tr>
+<tr><td class="blRangg">19.</td>
+<td class="blRangBg">/29.</td>
+<td class="blStNrg">592</td>
+<td class="blNameg">Marohn, Thomas</td>
+<td class="blJGg">1964</td>
+<td class="blVereing">LG Stadtwerke München</td>
+<td class="blLeistg">17:57</td>
+</tr>
+<tr><td class="blRangw">20.</td>
+<td class="blRangBw">/32.</td>
+<td class="blStNrw">670</td>
+<td class="blNamew">Loers, Gerald</td>
+<td class="blJGw">1972</td>
+<td class="blVereinw">Irontrizone</td>
+<td class="blLeistw">18:07</td>
+</tr>
+<tr><td class="blRangg">21.</td>
+<td class="blRangBg">/34.</td>
+<td class="blStNrg">550</td>
+<td class="blNameg">Eichenseher, Robert</td>
+<td class="blJGg">1977</td>
+<td class="blVereing">Tristar Regensburg</td>
+<td class="blLeistg">18:14</td>
+</tr>
+<tr><td class="blRangw">22.</td>
+<td class="blRangBw">/35.</td>
+<td class="blStNrw">570</td>
+<td class="blNamew">Korbany, David</td>
+<td class="blJGw">1997</td>
+<td class="blVereinw">TSV 1860 Rosenheim</td>
+<td class="blLeistw">18:16</td>
+</tr>
+<tr><td class="blRangg">23.</td>
+<td class="blRangBg">/39.</td>
+<td class="blStNrg">423</td>
+<td class="blNameg">Neudorfer, Josef</td>
+<td class="blJGg">1961</td>
+<td class="blVereing">SVG Ruhstorf/Rott</td>
+<td class="blLeistg">18:29</td>
+</tr>
+<tr><td class="blRangw">24.</td>
+<td class="blRangBw">/40.</td>
+<td class="blStNrw">675</td>
+<td class="blNamew">Singer, Alexander</td>
+<td class="blJGw">1987</td>
+<td class="blVereinw">Run &amp; Bike Kelheim</td>
+<td class="blLeistw">18:30</td>
+</tr>
+<tr><td class="blRangg">25.</td>
+<td class="blRangBg">/41.</td>
+<td class="blStNrg">193</td>
+<td class="blNameg">Beslmeisl, Hubert</td>
+<td class="blJGg">1962</td>
+<td class="blVereing">Run &amp; Bike Kelheim</td>
+<td class="blLeistg">18:35</td>
+</tr>
+<tr><td class="blRangw">26.</td>
+<td class="blRangBw">/42.</td>
+<td class="blStNrw">96</td>
+<td class="blNamew">Schneider, Patrick</td>
+<td class="blJGw">1992</td>
+<td class="blVereinw">TSV Burghaslach</td>
+<td class="blLeistw">18:36</td>
+</tr>
+<tr><td class="blRangg">27.</td>
+<td class="blRangBg">/43.</td>
+<td class="blStNrg">595</td>
+<td class="blNameg">Noell, Thomas</td>
+<td class="blJGg">1965</td>
+<td class="blVereing">SWC Regensburg</td>
+<td class="blLeistg">18:37</td>
+</tr>
+<tr><td class="blRangw">28.</td>
+<td class="blRangBw">/46.</td>
+<td class="blStNrw">676</td>
+<td class="blNamew">Rode, Patrick</td>
+<td class="blJGw">1977</td>
+<td class="blVereinw">Tristar Regensburg</td>
+<td class="blLeistw">18:52</td>
+</tr>
+<tr><td class="blRangg">29.</td>
+<td class="blRangBg">/47.</td>
+<td class="blStNrg">598</td>
+<td class="blNameg">Lulay, Gerd</td>
+<td class="blJGg">1971</td>
+<td class="blVereing">Tristar Regensburg</td>
+<td class="blLeistg">18:53</td>
+</tr>
+<tr><td class="blRangw">30.</td>
+<td class="blRangBw">/49.</td>
+<td class="blStNrw">677</td>
+<td class="blNamew">Meier, Alois</td>
+<td class="blJGw">1958</td>
+<td class="blVereinw">SV Freudenberg</td>
+<td class="blLeistw">18:54</td>
+</tr>
+<tr><td class="blRangg">31.</td>
+<td class="blRangBg">/51.</td>
+<td class="blStNrg">183</td>
+<td class="blNameg">Nickl, Christian</td>
+<td class="blJGg">1984</td>
+<td class="blVereing">ATSV Kallmünz</td>
+<td class="blLeistg">19:04</td>
+</tr>
+<tr><td class="blRangw">32.</td>
+<td class="blRangBw">/52.</td>
+<td class="blStNrw">441</td>
+<td class="blNamew">Betzlbacher, Andreas</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">SC Schwandorf</td>
+<td class="blLeistw">19:06</td>
+</tr>
+<tr><td class="blRangg">33.</td>
+<td class="blRangBg">/54.</td>
+<td class="blStNrg">184</td>
+<td class="blNameg">Nickl, Julian</td>
+<td class="blJGg">1990</td>
+<td class="blVereing">ATSV Kallmünz</td>
+<td class="blLeistg">19:13</td>
+</tr>
+<tr><td class="blRangw">34.</td>
+<td class="blRangBw">/55.</td>
+<td class="blStNrw">161</td>
+<td class="blNamew">Kirchinger, Michael</td>
+<td class="blJGw">1988</td>
+<td class="blVereinw">TV Geiselhöring</td>
+<td class="blLeistw">19:14</td>
+</tr>
+<tr><td class="blRangg">35.</td>
+<td class="blRangBg">/56.</td>
+<td class="blStNrg">671</td>
+<td class="blNameg">Gugelhardt, Alfred</td>
+<td class="blJGg">1980</td>
+<td class="blVereing">TV Geiselhöring</td>
+<td class="blLeistg">19:20</td>
+</tr>
+<tr><td class="blRangw">36.</td>
+<td class="blRangBw">/57.</td>
+<td class="blStNrw">449</td>
+<td class="blNamew">Thanei, Thomas</td>
+<td class="blJGw">1964</td>
+<td class="blVereinw">SC Schwandorf</td>
+<td class="blLeistw">19:24</td>
+</tr>
+<tr><td class="blRangg">37.</td>
+<td class="blRangBg">/58.</td>
+<td class="blStNrg">74</td>
+<td class="blNameg">Tichy, Christoph</td>
+<td class="blJGg">1980</td>
+<td class="blVereing">ANDRITZ Fiedler</td>
+<td class="blLeistg">19:42</td>
+</tr>
+<tr><td class="blRangw">38.</td>
+<td class="blRangBw">/60.</td>
+<td class="blStNrw">600</td>
+<td class="blNamew">Lutz, Thomas</td>
+<td class="blJGw">1966</td>
+<td class="blVereinw">Tristar Regensburg</td>
+<td class="blLeistw">19:46</td>
+</tr>
+<tr><td class="blRangg">39.</td>
+<td class="blRangBg">/63.</td>
+<td class="blStNrg">128</td>
+<td class="blNameg">Schmitt, Matthias</td>
+<td class="blJGg">1976</td>
+<td class="blVereing">Tri Team FFB</td>
+<td class="blLeistg">19:53</td>
+</tr>
+<tr><td class="blRangw">40.</td>
+<td class="blRangBw">/67.</td>
+<td class="blStNrw">5</td>
+<td class="blNamew">Colditz, Stefan</td>
+<td class="blJGw">1966</td>
+<td class="blVereinw">Zeitlarn</td>
+<td class="blLeistw">19:58</td>
+</tr>
+<tr><td class="blRangg">41.</td>
+<td class="blRangBg">/68.</td>
+<td class="blStNrg">443</td>
+<td class="blNameg">Hindenberg, Christian</td>
+<td class="blJGg">1990</td>
+<td class="blVereing">SC Schwandorf</td>
+<td class="blLeistg">20:00</td>
+</tr>
+<tr><td class="blRangw">42.</td>
+<td class="blRangBw">/71.</td>
+<td class="blStNrw">586</td>
+<td class="blNamew">Wulff, Jens</td>
+<td class="blJGw">1981</td>
+<td class="blVereinw">SWC Regensburg</td>
+<td class="blLeistw">20:11</td>
+</tr>
+<tr><td class="blRangg">43.</td>
+<td class="blRangBg">/73.</td>
+<td class="blStNrg">442</td>
+<td class="blNameg">Binner, Christian</td>
+<td class="blJGg">1990</td>
+<td class="blVereing">SC Schwandorf</td>
+<td class="blLeistg">20:29</td>
+</tr>
+<tr><td class="blRangw">44.</td>
+<td class="blRangBw">/75.</td>
+<td class="blStNrw">98</td>
+<td class="blNamew">Casanova, Valerio</td>
+<td class="blJGw">1966</td>
+<td class="blVereinw">SV Burgw. Orientierungslauf</td>
+<td class="blLeistw">20:42</td>
+</tr>
+<tr><td class="blRangg">45.</td>
+<td class="blRangBg">/76.</td>
+<td class="blStNrg">669</td>
+<td class="blNameg">Hotzel, Gottfried</td>
+<td class="blJGg">1964</td>
+<td class="blVereing">Tristar Regensburg</td>
+<td class="blLeistg">20:47</td>
+</tr>
+<tr><td class="blRangw">46.</td>
+<td class="blRangBw">/77.</td>
+<td class="blStNrw">187</td>
+<td class="blNamew">Wiendl, Stephan</td>
+<td class="blJGw">1975</td>
+<td class="blVereinw">ATSV Kallmünz</td>
+<td class="blLeistw">20:51</td>
+</tr>
+<tr><td class="blRangg">47.</td>
+<td class="blRangBg">/78.</td>
+<td class="blStNrg">483</td>
+<td class="blNameg">Ölhorn, Heinrich</td>
+<td class="blJGg">1961</td>
+<td class="blVereing">WSV Viechtach</td>
+<td class="blLeistg">20:51</td>
+</tr>
+<tr><td class="blRangw">48.</td>
+<td class="blRangBw">/80.</td>
+<td class="blStNrw">272</td>
+<td class="blNamew">Leopold, Tobias</td>
+<td class="blJGw">1994</td>
+<td class="blVereinw">Bike Team Regensburg</td>
+<td class="blLeistw">20:55</td>
+</tr>
+<tr><td class="blRangg">49.</td>
+<td class="blRangBg">/81.</td>
+<td class="blStNrg">25</td>
+<td class="blNameg">Pauer, Armin</td>
+<td class="blJGg">1969</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">20:59</td>
+</tr>
+<tr><td class="blRangw">50.</td>
+<td class="blRangBw">/83.</td>
+<td class="blStNrw">78</td>
+<td class="blNamew">Opel, Klaus</td>
+<td class="blJGw">1979</td>
+<td class="blVereinw">DJK Beucherling</td>
+<td class="blLeistw">21:01</td>
+</tr>
+<tr><td class="blRangg">51.</td>
+<td class="blRangBg">/84.</td>
+<td class="blStNrg">568</td>
+<td class="blNameg">Dumsky, Tobias</td>
+<td class="blJGg">2000</td>
+<td class="blVereing">TSV Mainburg</td>
+<td class="blLeistg">21:24</td>
+</tr>
+<tr><td class="blRangw">52.</td>
+<td class="blRangBw">/85.</td>
+<td class="blStNrw">226</td>
+<td class="blNamew">Völkl, Josef</td>
+<td class="blJGw">1956</td>
+<td class="blVereinw">TSV Pleystein</td>
+<td class="blLeistw">21:25</td>
+</tr>
+<tr><td class="blRangg">53.</td>
+<td class="blRangBg">/86.</td>
+<td class="blStNrg">486</td>
+<td class="blNameg">Gunsenheimer, Wolfgang</td>
+<td class="blJGg">1968</td>
+<td class="blVereing">SG Waldetzenberg (LG Telis F.)</td>
+<td class="blLeistg">21:29</td>
+</tr>
+<tr><td class="blRangw">54.</td>
+<td class="blRangBw">/88.</td>
+<td class="blStNrw">75</td>
+<td class="blNamew">Greil, Stefan</td>
+<td class="blJGw">1978</td>
+<td class="blVereinw">DJK Beucherling</td>
+<td class="blLeistw">21:44</td>
+</tr>
+<tr><td class="blRangg">55.</td>
+<td class="blRangBg">/89.</td>
+<td class="blStNrg">447</td>
+<td class="blNameg">Schwarz, Thomas</td>
+<td class="blJGg">1990</td>
+<td class="blVereing">SC Schwandorf</td>
+<td class="blLeistg">21:49</td>
+</tr>
+<tr><td class="blRangw">56.</td>
+<td class="blRangBw">/90.</td>
+<td class="blStNrw">17</td>
+<td class="blNamew">Krahmer, Markus</td>
+<td class="blJGw">1970</td>
+<td class="blVereinw">Germering</td>
+<td class="blLeistw">21:50</td>
+</tr>
+<tr><td class="blRangg">57.</td>
+<td class="blRangBg">/92.</td>
+<td class="blStNrg">290</td>
+<td class="blNameg">Köppelle, Winfried</td>
+<td class="blJGg">1967</td>
+<td class="blVereing">Kumpfmühl-Runners</td>
+<td class="blLeistg">22:05</td>
+</tr>
+<tr><td class="blRangw">58.</td>
+<td class="blRangBw">/93.</td>
+<td class="blStNrw">579</td>
+<td class="blNamew">Paa, Volker</td>
+<td class="blJGw">1978</td>
+<td class="blVereinw">Ries Hornets Nördlingen</td>
+<td class="blLeistw">22:11</td>
+</tr>
+<tr><td class="blRangg">59.</td>
+<td class="blRangBg">/95.</td>
+<td class="blStNrg">472</td>
+<td class="blNameg">Schreier, Helmut</td>
+<td class="blJGg">1960</td>
+<td class="blVereing">Lauftreff Teublitz</td>
+<td class="blLeistg">22:30</td>
+</tr>
+<tr><td class="blRangw">60.</td>
+<td class="blRangBw">/96.</td>
+<td class="blStNrw">80</td>
+<td class="blNamew">Fisch, Peter</td>
+<td class="blJGw">1981</td>
+<td class="blVereinw">Bikes-4-u</td>
+<td class="blLeistw">22:31</td>
+</tr>
+<tr><td class="blRangg">61.</td>
+<td class="blRangBg">/97.</td>
+<td class="blStNrg">266</td>
+<td class="blNameg">Bley, Roland</td>
+<td class="blJGg">1981</td>
+<td class="blVereing">Bike Team Regensburg</td>
+<td class="blLeistg">22:36</td>
+</tr>
+<tr><td class="blRangw">62.</td>
+<td class="blRangBw">/98.</td>
+<td class="blStNrw">448</td>
+<td class="blNamew">Sedelmaier, Heiko</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">SC Schwandorf</td>
+<td class="blLeistw">22:39</td>
+</tr>
+<tr><td class="blRangg">63.</td>
+<td class="blRangBg">/101</td>
+<td class="blStNrg">446</td>
+<td class="blNameg">Schießl, Matthias</td>
+<td class="blJGg">1978</td>
+<td class="blVereing">SC Schwandorf</td>
+<td class="blLeistg">22:48</td>
+</tr>
+<tr><td class="blRangw">64.</td>
+<td class="blRangBw">/102</td>
+<td class="blStNrw">3</td>
+<td class="blNamew">Bartsch, Harald</td>
+<td class="blJGw">1976</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">22:55</td>
+</tr>
+<tr><td class="blRangg">65.</td>
+<td class="blRangBg">/103</td>
+<td class="blStNrg">301</td>
+<td class="blNameg">Gehr, Werner</td>
+<td class="blJGg">1962</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">23:07</td>
+</tr>
+<tr><td class="blRangw">66.</td>
+<td class="blRangBw">/104</td>
+<td class="blStNrw">306</td>
+<td class="blNamew">Nadenik, Rudi</td>
+<td class="blJGw">1961</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">23:07</td>
+</tr>
+<tr><td class="blRangg">67.</td>
+<td class="blRangBg">/105</td>
+<td class="blStNrg">99</td>
+<td class="blNameg">Schwarck, Manfred</td>
+<td class="blJGg">1970</td>
+<td class="blVereing">SV Burgw. Orientierungslauf</td>
+<td class="blLeistg">23:14</td>
+</tr>
+<tr><td class="blRangw">68.</td>
+<td class="blRangBw">/106</td>
+<td class="blStNrw">32</td>
+<td class="blNamew">Vieracker, Thomas</td>
+<td class="blJGw">1966</td>
+<td class="blVereinw">Regensburg</td>
+<td class="blLeistw">23:23</td>
+</tr>
+<tr><td class="blRangg">69.</td>
+<td class="blRangBg">/107</td>
+<td class="blStNrg">573</td>
+<td class="blNameg">Werner, Rüdiger</td>
+<td class="blJGg">1972</td>
+<td class="blVereing">SV Landshut-Münchnerau</td>
+<td class="blLeistg">23:24</td>
+</tr>
+<tr><td class="blRangw">70.</td>
+<td class="blRangBw">/108</td>
+<td class="blStNrw">18</td>
+<td class="blNamew">Kreye, Maik</td>
+<td class="blJGw">1973</td>
+<td class="blVereinw">Schwandorf</td>
+<td class="blLeistw">23:25</td>
+</tr>
+<tr><td class="blRangg">71.</td>
+<td class="blRangBg">/109</td>
+<td class="blStNrg">667</td>
+<td class="blNameg">Röhrl, Stefan</td>
+<td class="blJGg">1965</td>
+<td class="blVereing">Rennradfuzzis</td>
+<td class="blLeistg">23:26</td>
+</tr>
+<tr><td class="blRangw">72.</td>
+<td class="blRangBw">/110</td>
+<td class="blStNrw">553</td>
+<td class="blNamew">Schmitt, Bernhard</td>
+<td class="blJGw">1963</td>
+<td class="blVereinw">Laufen mit Herz</td>
+<td class="blLeistw">23:28</td>
+</tr>
+<tr><td class="blRangg">72.</td>
+<td class="blRangBg">/110</td>
+<td class="blStNrg">564</td>
+<td class="blNameg">Lux, Heinz</td>
+<td class="blJGg">1966</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">23:28</td>
+</tr>
+<tr><td class="blRangw">74.</td>
+<td class="blRangBw">/112</td>
+<td class="blStNrw">160</td>
+<td class="blNamew">Kirchinger, Hans</td>
+<td class="blJGw">1960</td>
+<td class="blVereinw">TV Geiselhöring</td>
+<td class="blLeistw">23:30</td>
+</tr>
+<tr><td class="blRangg">75.</td>
+<td class="blRangBg">/113</td>
+<td class="blStNrg">559</td>
+<td class="blNameg">Weigt, Rudolf</td>
+<td class="blJGg">1958</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">23:31</td>
+</tr>
+<tr><td class="blRangw">76.</td>
+<td class="blRangBw">/115</td>
+<td class="blStNrw">666</td>
+<td class="blNamew">Bauer, Mario</td>
+<td class="blJGw">1970</td>
+<td class="blVereinw">Laufstilanalyse</td>
+<td class="blLeistw">23:34</td>
+</tr>
+<tr><td class="blRangg">77.</td>
+<td class="blRangBg">/116</td>
+<td class="blStNrg">665</td>
+<td class="blNameg">Berger, Tom</td>
+<td class="blJGg">1965</td>
+<td class="blVereing">Rennradfuzzis</td>
+<td class="blLeistg">23:44</td>
+</tr>
+<tr><td class="blRangw">78.</td>
+<td class="blRangBw">/117</td>
+<td class="blStNrw">465</td>
+<td class="blNamew">Riedl, Martin</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">WSV Schönsee</td>
+<td class="blLeistw">23:53</td>
+</tr>
+<tr><td class="blRangg">79.</td>
+<td class="blRangBg">/118</td>
+<td class="blStNrg">590</td>
+<td class="blNameg">Miklos, Thomas</td>
+<td class="blJGg">1965</td>
+<td class="blVereing">Skiclub Großberg</td>
+<td class="blLeistg">23:54</td>
+</tr>
+<tr><td class="blRangw">80.</td>
+<td class="blRangBw">/119</td>
+<td class="blStNrw">305</td>
+<td class="blNamew">Mehringer, Günter</td>
+<td class="blJGw">1972</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">23:56</td>
+</tr>
+<tr><td class="blRangg">81.</td>
+<td class="blRangBg">/120</td>
+<td class="blStNrg">11</td>
+<td class="blNameg">Emmerlich, Martin</td>
+<td class="blJGg">1981</td>
+<td class="blVereing">Regensburg</td>
+<td class="blLeistg">23:59</td>
+</tr>
+<tr><td class="blRangw">82.</td>
+<td class="blRangBw">/123</td>
+<td class="blStNrw">561</td>
+<td class="blNamew">Klein, Jürgen</td>
+<td class="blJGw">1965</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">24:39</td>
+</tr>
+<tr><td class="blRangg">83.</td>
+<td class="blRangBg">/124</td>
+<td class="blStNrg">227</td>
+<td class="blNameg">Völkl, Joseph</td>
+<td class="blJGg">1994</td>
+<td class="blVereing">TSV Pleystein</td>
+<td class="blLeistg">24:44</td>
+</tr>
+<tr><td class="blRangw">84.</td>
+<td class="blRangBw">/129</td>
+<td class="blStNrw">238</td>
+<td class="blNamew">Seebauer, Andreas</td>
+<td class="blJGw">1986</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">25:26</td>
+</tr>
+<tr><td class="blRangg">85.</td>
+<td class="blRangBg">/134</td>
+<td class="blStNrg">470</td>
+<td class="blNameg">Bartsch, Peter</td>
+<td class="blJGg">1982</td>
+<td class="blVereing">Lauftreff Teublitz</td>
+<td class="blLeistg">25:52</td>
+</tr>
+<tr><td class="blRangw">86.</td>
+<td class="blRangBw">/139</td>
+<td class="blStNrw">562</td>
+<td class="blNamew">Oexl, Franz</td>
+<td class="blJGw">1956</td>
+<td class="blVereinw">TSV Dietfurt (LG Telis Finanz)</td>
+<td class="blLeistw">26:50</td>
+</tr>
+<tr><td class="blRangg">87.</td>
+<td class="blRangBg">/142</td>
+<td class="blStNrg">298</td>
+<td class="blNameg">Englbrecht, Stephan</td>
+<td class="blJGg">1971</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">27:00</td>
+</tr>
+<tr><td class="blRangw">88.</td>
+<td class="blRangBw">/146</td>
+<td class="blStNrw">30</td>
+<td class="blNamew">Thanhäuser, Florian</td>
+<td class="blJGw">1991</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">27:21</td>
+</tr>
+<tr><td class="blRangg">89.</td>
+<td class="blRangBg">/150</td>
+<td class="blStNrg">239</td>
+<td class="blNameg">Speer, Jörg</td>
+<td class="blJGg">1968</td>
+<td class="blVereing">Purendure Laufteam</td>
+<td class="blLeistg">27:29</td>
+</tr>
+<tr><td class="blRangw">90.</td>
+<td class="blRangBw">/154</td>
+<td class="blStNrw">206</td>
+<td class="blNamew">Bittner, Josef</td>
+<td class="blJGw">1960</td>
+<td class="blVereinw">Laufen mit Herz</td>
+<td class="blLeistw">27:43</td>
+</tr>
+<tr><td class="blRangg">91.</td>
+<td class="blRangBg">/155</td>
+<td class="blStNrg">9</td>
+<td class="blNameg">Eder, Tobias</td>
+<td class="blJGg">1993</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">28:00</td>
+</tr>
+<tr><td class="blRangw">92.</td>
+<td class="blRangBw">/157</td>
+<td class="blStNrw">85</td>
+<td class="blNamew">Nußbaumer, Peter</td>
+<td class="blJGw">1971</td>
+<td class="blVereinw">Team Bischofshof</td>
+<td class="blLeistw">28:05</td>
+</tr>
+<tr><td class="blRangg">93.</td>
+<td class="blRangBg">/165</td>
+<td class="blStNrg">511</td>
+<td class="blNameg">Kiendl, Alois</td>
+<td class="blJGg">1948</td>
+<td class="blVereing">TSV Detag Wernberg</td>
+<td class="blLeistg">28:37</td>
+</tr>
+<tr><td class="blRangw">93.</td>
+<td class="blRangBw">/165</td>
+<td class="blStNrw">512</td>
+<td class="blNamew">Klinger, Thomas</td>
+<td class="blJGw">1975</td>
+<td class="blVereinw">TSV Detag Wernberg</td>
+<td class="blLeistw">28:37</td>
+</tr>
+<tr><td class="blRangg">93.</td>
+<td class="blRangBg">/165</td>
+<td class="blStNrg">682</td>
+<td class="blNameg">Baier, Fabian</td>
+<td class="blJGg">1995</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">28:37</td>
+</tr>
+<tr><td class="blRangw">96.</td>
+<td class="blRangBw">/173</td>
+<td class="blStNrw">1154</td>
+<td class="blNamew">Ostermeier, Florian</td>
+<td class="blJGw">1993</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">29:15</td>
+</tr>
+<tr><td class="blRangg">97.</td>
+<td class="blRangBg">/191</td>
+<td class="blStNrg">513</td>
+<td class="blNameg">Schirmer, Hans Martin</td>
+<td class="blJGg">1939</td>
+<td class="blVereing">TSV Detag Wernberg</td>
+<td class="blLeistg">30:33</td>
+</tr>
+<tr><td class="blRangw">98.</td>
+<td class="blRangBw">/194</td>
+<td class="blStNrw">581</td>
+<td class="blNamew">Mithro, Sebowa</td>
+<td class="blJGw">1988</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">30:49</td>
+</tr>
+<tr><td class="blRangg">99.</td>
+<td class="blRangBg">/199</td>
+<td class="blStNrg">689</td>
+<td class="blNameg">Ederer, Franz</td>
+<td class="blJGg">1965</td>
+<td class="blVereing">Laufstilanalyse.de</td>
+<td class="blLeistg">31:04</td>
+</tr>
+<tr><td class="blRangw">100.</td>
+<td class="blRangBw">/203</td>
+<td class="blStNrw">241</td>
+<td class="blNamew">Voehringer, Fritz</td>
+<td class="blJGw">1962</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">31:47</td>
+</tr>
+<tr><td class="blRangg">101.</td>
+<td class="blRangBg">/207</td>
+<td class="blStNrg">31</td>
+<td class="blNameg">Ulrich, Peter</td>
+<td class="blJGg">1966</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">32:23</td>
+</tr>
+<tr><td class="blRangw">102.</td>
+<td class="blRangBw">/209</td>
+<td class="blStNrw">265</td>
+<td class="blNamew">Bauer, Jürgen</td>
+<td class="blJGw">1967</td>
+<td class="blVereinw">Bike Team Regensburg</td>
+<td class="blLeistw">32:24</td>
+</tr>
+<tr><td class="blRangg">103.</td>
+<td class="blRangBg">/216</td>
+<td class="blStNrg">6</td>
+<td class="blNameg">Dambeck, Jürgen</td>
+<td class="blJGg">1963</td>
+<td class="blVereing">Regensburg</td>
+<td class="blLeistg">32:57</td>
+</tr>
+<tr><td class="blRangw">104.</td>
+<td class="blRangBw">/218</td>
+<td class="blStNrw">450</td>
+<td class="blNamew">Vogl, Dieter</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">SC Schwandorf</td>
+<td class="blLeistw">33:04</td>
+</tr>
+<tr><td class="blRangg">105.</td>
+<td class="blRangBg">/226</td>
+<td class="blStNrg">23</td>
+<td class="blNameg">Mehrl, Robert</td>
+<td class="blJGg">1953</td>
+<td class="blVereing">Nittendorf</td>
+<td class="blLeistg">39:41</td>
+</tr>
+<tr><td class="blRangw">106.</td>
+<td class="blRangBw">/229</td>
+<td class="blStNrw">240</td>
+<td class="blNamew">Tajsich, Thomas</td>
+<td class="blJGw">1969</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">50:42</td>
+</tr>
+<tr><td class="blRangg">107.</td>
+<td class="blRangBg">/230</td>
+<td class="blStNrg">684</td>
+<td class="blNameg">Simmerl, Thomas</td>
+<td class="blJGg">1971</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">58:43</td>
+</tr>
+</tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blWettb">Crosslauf 5 km</td>
+<td class="blAKl">Frauen</td>
+</tr></tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+<tbody><tr><td class="blRangg">1.</td>
+<td class="blRangBg">/13.</td>
+<td class="blStNrg">325</td>
+<td class="blNameg">Harrer, Corinna</td>
+<td class="blJGg">1991</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">16:20</td>
+</tr>
+<tr><td class="blRangw">2.</td>
+<td class="blRangBw">/16.</td>
+<td class="blStNrw">349</td>
+<td class="blNamew">Volke, Steffi</td>
+<td class="blJGw">1976</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">16:59</td>
+</tr>
+<tr><td class="blRangg">3.</td>
+<td class="blRangBg">/19.</td>
+<td class="blStNrg">338</td>
+<td class="blNameg">Plinke, Anna-Katharina</td>
+<td class="blJGg">1988</td>
+<td class="blVereing">LG Telis Finanz Regensburg</td>
+<td class="blLeistg">17:03</td>
+</tr>
+<tr><td class="blRangw">4.</td>
+<td class="blRangBw">/20.</td>
+<td class="blStNrw">329</td>
+<td class="blNamew">Kick, Julia</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">17:12</td>
+</tr>
+<tr><td class="blRangg">5.</td>
+<td class="blRangBg">/36.</td>
+<td class="blStNrg">507</td>
+<td class="blNameg">Gomez Islinger, Marlene</td>
+<td class="blJGg">1993</td>
+<td class="blVereing">DJK Weiden</td>
+<td class="blLeistg">18:19</td>
+</tr>
+<tr><td class="blRangw">6.</td>
+<td class="blRangBw">/44.</td>
+<td class="blStNrw">327</td>
+<td class="blNamew">Holopainen, Aurora</td>
+<td class="blJGw">1992</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">18:40</td>
+</tr>
+<tr><td class="blRangg">7.</td>
+<td class="blRangBg">/45.</td>
+<td class="blStNrg">188</td>
+<td class="blNameg">Hilares, Loza Marcela</td>
+<td class="blJGg">1965</td>
+<td class="blVereing">ATSV Kallmünz</td>
+<td class="blLeistg">18:41</td>
+</tr>
+<tr><td class="blRangw">8.</td>
+<td class="blRangBw">/50.</td>
+<td class="blStNrw">321</td>
+<td class="blNamew">Ferstl, Eva-Maria</td>
+<td class="blJGw">1986</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">19:03</td>
+</tr>
+<tr><td class="blRangg">9.</td>
+<td class="blRangBg">/65.</td>
+<td class="blStNrg">285</td>
+<td class="blNameg">Mehrl, Gaby</td>
+<td class="blJGg">1986</td>
+<td class="blVereing">Bike Team Regensburg</td>
+<td class="blLeistg">19:57</td>
+</tr>
+<tr><td class="blRangw">10.</td>
+<td class="blRangBw">/69.</td>
+<td class="blStNrw">380</td>
+<td class="blNamew">Hierl, Birgit</td>
+<td class="blJGw">1966</td>
+<td class="blVereinw">SWC Regensburg</td>
+<td class="blLeistw">20:02</td>
+</tr>
+<tr><td class="blRangg">11.</td>
+<td class="blRangBg">/70.</td>
+<td class="blStNrg">64</td>
+<td class="blNameg">Hartl, Agnes</td>
+<td class="blJGg">1988</td>
+<td class="blVereing">LC Aichach</td>
+<td class="blLeistg">20:07</td>
+</tr>
+<tr><td class="blRangw">12.</td>
+<td class="blRangBw">/72.</td>
+<td class="blStNrw">522</td>
+<td class="blNamew">Sollinger, Kerstin</td>
+<td class="blJGw">1981</td>
+<td class="blVereinw">LG Würm Athletik</td>
+<td class="blLeistw">20:18</td>
+</tr>
+<tr><td class="blRangg">13.</td>
+<td class="blRangBg">/81.</td>
+<td class="blStNrg">61</td>
+<td class="blNameg">Zierock, Sabine</td>
+<td class="blJGg">1985</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">20:59</td>
+</tr>
+<tr><td class="blRangw">14.</td>
+<td class="blRangBw">/87.</td>
+<td class="blStNrw">523</td>
+<td class="blNamew">Specht, Susanne</td>
+<td class="blJGw">1984</td>
+<td class="blVereinw">LG Würm Athletik</td>
+<td class="blLeistw">21:37</td>
+</tr>
+<tr><td class="blRangg">15.</td>
+<td class="blRangBg">/91.</td>
+<td class="blStNrg">589</td>
+<td class="blNameg">Weigl, Ines</td>
+<td class="blJGg">1987</td>
+<td class="blVereing">Skivereinigung Amberg</td>
+<td class="blLeistg">21:57</td>
+</tr>
+<tr><td class="blRangw">16.</td>
+<td class="blRangBw">/94.</td>
+<td class="blStNrw">284</td>
+<td class="blNamew">Mehrl, Eva</td>
+<td class="blJGw">1986</td>
+<td class="blVereinw">Bike Team Regensburg</td>
+<td class="blLeistw">22:22</td>
+</tr>
+<tr><td class="blRangg">17.</td>
+<td class="blRangBg">/99.</td>
+<td class="blStNrg">71</td>
+<td class="blNameg">Kummert, Eva</td>
+<td class="blJGg">1968</td>
+<td class="blVereing">Skivereinigung Amberg</td>
+<td class="blLeistg">22:40</td>
+</tr>
+<tr><td class="blRangw">18.</td>
+<td class="blRangBw">/100</td>
+<td class="blStNrw">185</td>
+<td class="blNamew">Schön, Ulrike</td>
+<td class="blJGw">1975</td>
+<td class="blVereinw">ATSV Kallmünz</td>
+<td class="blLeistw">22:41</td>
+</tr>
+<tr><td class="blRangg">19.</td>
+<td class="blRangBg">/121</td>
+<td class="blStNrg">81</td>
+<td class="blNameg">Fisch, Steffi</td>
+<td class="blJGg">1984</td>
+<td class="blVereing">Bikes-4-u</td>
+<td class="blLeistg">24:06</td>
+</tr>
+<tr><td class="blRangw">20.</td>
+<td class="blRangBw">/125</td>
+<td class="blStNrw">516</td>
+<td class="blNamew">Klinger, Brigitte</td>
+<td class="blJGw">1980</td>
+<td class="blVereinw">TSV Detag Wernberg</td>
+<td class="blLeistw">24:45</td>
+</tr>
+<tr><td class="blRangg">21.</td>
+<td class="blRangBg">/127</td>
+<td class="blStNrg">685</td>
+<td class="blNameg">Ebermann, Sabine</td>
+<td class="blJGg">1985</td>
+<td class="blVereing">Laufstilanalyse.de</td>
+<td class="blLeistg">25:17</td>
+</tr>
+<tr><td class="blRangw">22.</td>
+<td class="blRangBw">/134</td>
+<td class="blStNrw">542</td>
+<td class="blNamew">Schrod, Andrea</td>
+<td class="blJGw">1998</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">25:52</td>
+</tr>
+<tr><td class="blRangg">23.</td>
+<td class="blRangBg">/136</td>
+<td class="blStNrg">56</td>
+<td class="blNameg">Schindler, Angelika</td>
+<td class="blJGg">1966</td>
+<td class="blVereing">Kirchendemenreuth</td>
+<td class="blLeistg">25:57</td>
+</tr>
+<tr><td class="blRangw">24.</td>
+<td class="blRangBw">/137</td>
+<td class="blStNrw">101</td>
+<td class="blNamew">Hertel, Corinna</td>
+<td class="blJGw">1991</td>
+<td class="blVereinw">SV Burgw. Orientierungslauf</td>
+<td class="blLeistw">25:58</td>
+</tr>
+<tr><td class="blRangg">25.</td>
+<td class="blRangBg">/138</td>
+<td class="blStNrg">597</td>
+<td class="blNameg">Höfen, Petra</td>
+<td class="blJGg">1958</td>
+<td class="blVereing">Großberg</td>
+<td class="blLeistg">26:10</td>
+</tr>
+<tr><td class="blRangw">26.</td>
+<td class="blRangBw">/142</td>
+<td class="blStNrw">320</td>
+<td class="blNamew">Englbrecht, Michaela</td>
+<td class="blJGw">1972</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">27:00</td>
+</tr>
+<tr><td class="blRangg">27.</td>
+<td class="blRangBg">/145</td>
+<td class="blStNrg">688</td>
+<td class="blNameg">Emberger, Uschi</td>
+<td class="blJGg">1968</td>
+<td class="blVereing">Intersport Wanninger</td>
+<td class="blLeistg">27:20</td>
+</tr>
+<tr><td class="blRangw">28.</td>
+<td class="blRangBw">/147</td>
+<td class="blStNrw">506</td>
+<td class="blNamew">Eich, Katharina</td>
+<td class="blJGw">1993</td>
+<td class="blVereinw">DJK Weiden</td>
+<td class="blLeistw">27:24</td>
+</tr>
+<tr><td class="blRangg">29.</td>
+<td class="blRangBg">/148</td>
+<td class="blStNrg">485</td>
+<td class="blNameg">Poxleitner, Alexandra</td>
+<td class="blJGg">1989</td>
+<td class="blVereing">TV Vohenstrauß</td>
+<td class="blLeistg">27:24</td>
+</tr>
+<tr><td class="blRangw">30.</td>
+<td class="blRangBw">/151</td>
+<td class="blStNrw">541</td>
+<td class="blNamew">Hübner, Katharina</td>
+<td class="blJGw">1999</td>
+<td class="blVereinw">LG Telis Finanz Regensburg</td>
+<td class="blLeistw">27:42</td>
+</tr>
+<tr><td class="blRangg">31.</td>
+<td class="blRangBg">/156</td>
+<td class="blStNrg">54</td>
+<td class="blNameg">Rank, Martina</td>
+<td class="blJGg">1984</td>
+<td class="blVereing">Regensburg</td>
+<td class="blLeistg">28:00</td>
+</tr>
+<tr><td class="blRangw">32.</td>
+<td class="blRangBw">/159</td>
+<td class="blStNrw">39</td>
+<td class="blNamew">Fenner, Sabine</td>
+<td class="blJGw">1981</td>
+<td class="blVereinw">Regensburg</td>
+<td class="blLeistw">28:15</td>
+</tr>
+<tr><td class="blRangg">33.</td>
+<td class="blRangBg">/160</td>
+<td class="blStNrg">560</td>
+<td class="blNameg">Schumauser, Helga</td>
+<td class="blJGg">1958</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">28:23</td>
+</tr>
+<tr><td class="blRangw">34.</td>
+<td class="blRangBw">/161</td>
+<td class="blStNrw">399</td>
+<td class="blNamew">Scharrer, Gerlinde</td>
+<td class="blJGw">1954</td>
+<td class="blVereinw">St. Marien-Runners</td>
+<td class="blLeistw">28:27</td>
+</tr>
+<tr><td class="blRangg">35.</td>
+<td class="blRangBg">/162</td>
+<td class="blStNrg">248</td>
+<td class="blNameg">Leibl, Margit</td>
+<td class="blJGg">1966</td>
+<td class="blVereing">Purendure Laufteam</td>
+<td class="blLeistg">28:28</td>
+</tr>
+<tr><td class="blRangw">36.</td>
+<td class="blRangBw">/163</td>
+<td class="blStNrw">680</td>
+<td class="blNamew">Sterner, Claudia</td>
+<td class="blJGw">1965</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">28:29</td>
+</tr>
+<tr><td class="blRangg">37.</td>
+<td class="blRangBg">/164</td>
+<td class="blStNrg">681</td>
+<td class="blNameg">Baier, Leonie</td>
+<td class="blJGg">2000</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">28:34</td>
+</tr>
+<tr><td class="blRangw">38.</td>
+<td class="blRangBw">/168</td>
+<td class="blStNrw">209</td>
+<td class="blNamew">Bittner, Claudia</td>
+<td class="blJGw">1962</td>
+<td class="blVereinw">Laufen mit Herz</td>
+<td class="blLeistw">28:48</td>
+</tr>
+<tr><td class="blRangg">39.</td>
+<td class="blRangBg">/169</td>
+<td class="blStNrg">210</td>
+<td class="blNameg">Bötzl, Stephanie</td>
+<td class="blJGg">1981</td>
+<td class="blVereing">Laufen mit Herz</td>
+<td class="blLeistg">29:01</td>
+</tr>
+<tr><td class="blRangw">40.</td>
+<td class="blRangBw">/170</td>
+<td class="blStNrw">244</td>
+<td class="blNamew">Huber, Steffi</td>
+<td class="blJGw">1958</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">29:13</td>
+</tr>
+<tr><td class="blRangg">40.</td>
+<td class="blRangBg">/170</td>
+<td class="blStNrg">51</td>
+<td class="blNameg">Mehrl, Monika</td>
+<td class="blJGg">1956</td>
+<td class="blVereing">Nittendorf</td>
+<td class="blLeistg">29:13</td>
+</tr>
+<tr><td class="blRangw">42.</td>
+<td class="blRangBw">/174</td>
+<td class="blStNrw">215</td>
+<td class="blNamew">Kummert, Helga</td>
+<td class="blJGw">1962</td>
+<td class="blVereinw">Mini-Mäuse Mendorferbuch</td>
+<td class="blLeistw">29:18</td>
+</tr>
+<tr><td class="blRangg">42.</td>
+<td class="blRangBg">/174</td>
+<td class="blStNrg">524</td>
+<td class="blNameg">Pauly, Diana</td>
+<td class="blJGg">1979</td>
+<td class="blVereing">Team Retina</td>
+<td class="blLeistg">29:18</td>
+</tr>
+<tr><td class="blRangw">42.</td>
+<td class="blRangBw">/174</td>
+<td class="blStNrw">544</td>
+<td class="blNamew">Greiner, Lena</td>
+<td class="blJGw">1996</td>
+<td class="blVereinw">Regenburg</td>
+<td class="blLeistw">29:18</td>
+</tr>
+<tr><td class="blRangg">45.</td>
+<td class="blRangBg">/177</td>
+<td class="blStNrg">214</td>
+<td class="blNameg">Kratzer, Gerlinde</td>
+<td class="blJGg">1955</td>
+<td class="blVereing">Mini-Mäuse Mendorferbuch</td>
+<td class="blLeistg">29:19</td>
+</tr>
+<tr><td class="blRangw">45.</td>
+<td class="blRangBw">/177</td>
+<td class="blStNrw">453</td>
+<td class="blNamew">Schwarz, Melanie</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">SC Schwandorf</td>
+<td class="blLeistw">29:19</td>
+</tr>
+<tr><td class="blRangg">45.</td>
+<td class="blRangBg">/177</td>
+<td class="blStNrg">525</td>
+<td class="blNameg">Schäfer, Nicole</td>
+<td class="blJGg">1987</td>
+<td class="blVereing">Team Retina</td>
+<td class="blLeistg">29:19</td>
+</tr>
+<tr><td class="blRangw">45.</td>
+<td class="blRangBw">/177</td>
+<td class="blStNrw">668</td>
+<td class="blNamew">Eberl, Anne</td>
+<td class="blJGw">1991</td>
+<td class="blVereinw">Irontrizone</td>
+<td class="blLeistw">29:19</td>
+</tr>
+<tr><td class="blRangg">45.</td>
+<td class="blRangBg">/177</td>
+<td class="blStNrg">686</td>
+<td class="blNameg">Spangler, Sandra</td>
+<td class="blJGg">1987</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">29:19</td>
+</tr>
+<tr><td class="blRangw">50.</td>
+<td class="blRangBw">/182</td>
+<td class="blStNrw">44</td>
+<td class="blNamew">Himmel, Lena</td>
+<td class="blJGw">1989</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">29:22</td>
+</tr>
+<tr><td class="blRangg">51.</td>
+<td class="blRangBg">/183</td>
+<td class="blStNrg">53</td>
+<td class="blNameg">Mühlbauer, Sabine</td>
+<td class="blJGg">1990</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">29:31</td>
+</tr>
+<tr><td class="blRangw">52.</td>
+<td class="blRangBw">/184</td>
+<td class="blStNrw">57</td>
+<td class="blNamew">Schuder, Claudia</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">29:52</td>
+</tr>
+<tr><td class="blRangg">53.</td>
+<td class="blRangBg">/185</td>
+<td class="blStNrg">40</td>
+<td class="blNameg">Greiner, Katharina</td>
+<td class="blJGg">1988</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">30:09</td>
+</tr>
+<tr><td class="blRangw">54.</td>
+<td class="blRangBw">/186</td>
+<td class="blStNrw">253</td>
+<td class="blNamew">Speer, Nevenka</td>
+<td class="blJGw">1967</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">30:10</td>
+</tr>
+<tr><td class="blRangg">54.</td>
+<td class="blRangBg">/186</td>
+<td class="blStNrg">33</td>
+<td class="blNameg">Aumer, Vera</td>
+<td class="blJGg">1989</td>
+<td class="blVereing">Regensburg</td>
+<td class="blLeistg">30:10</td>
+</tr>
+<tr><td class="blRangw">56.</td>
+<td class="blRangBw">/188</td>
+<td class="blStNrw">257</td>
+<td class="blNamew">Thum, Ute</td>
+<td class="blJGw">1970</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">30:11</td>
+</tr>
+<tr><td class="blRangg">57.</td>
+<td class="blRangBg">/189</td>
+<td class="blStNrg">243</td>
+<td class="blNameg">Hopp, Christiane</td>
+<td class="blJGg">1968</td>
+<td class="blVereing">Purendure Laufteam</td>
+<td class="blLeistg">30:25</td>
+</tr>
+<tr><td class="blRangw">58.</td>
+<td class="blRangBw">/190</td>
+<td class="blStNrw">452</td>
+<td class="blNamew">Kopf-Schießl, Melanie</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">SC Schwandorf</td>
+<td class="blLeistw">30:26</td>
+</tr>
+<tr><td class="blRangg">59.</td>
+<td class="blRangBg">/192</td>
+<td class="blStNrg">46</td>
+<td class="blNameg">Kobelt, Carolin</td>
+<td class="blJGg">1988</td>
+<td class="blVereing">Regensburg</td>
+<td class="blLeistg">30:34</td>
+</tr>
+<tr><td class="blRangw">60.</td>
+<td class="blRangBw">/195</td>
+<td class="blStNrw">279</td>
+<td class="blNamew">Falgner, Tini</td>
+<td class="blJGw">1981</td>
+<td class="blVereinw">Bike Team Regensburg</td>
+<td class="blLeistw">31:01</td>
+</tr>
+<tr><td class="blRangg">61.</td>
+<td class="blRangBg">/196</td>
+<td class="blStNrg">599</td>
+<td class="blNameg">Kämpf, Erika</td>
+<td class="blJGg">1961</td>
+<td class="blVereing">LLC Marathon Regensburg</td>
+<td class="blLeistg">31:02</td>
+</tr>
+<tr><td class="blRangw">62.</td>
+<td class="blRangBw">/201</td>
+<td class="blStNrw">249</td>
+<td class="blNamew">Reisinger, Ingrid</td>
+<td class="blJGw">1956</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">31:34</td>
+</tr>
+<tr><td class="blRangg">63.</td>
+<td class="blRangBg">/202</td>
+<td class="blStNrg">242</td>
+<td class="blNameg">Blaumoser, Beate</td>
+<td class="blJGg">1962</td>
+<td class="blVereing">Purendure Laufteam</td>
+<td class="blLeistg">31:35</td>
+</tr>
+<tr><td class="blRangw">64.</td>
+<td class="blRangBw">/204</td>
+<td class="blStNrw">258</td>
+<td class="blNamew">Voehringer, Doris</td>
+<td class="blJGw">1967</td>
+<td class="blVereinw">Purendure Laufteam</td>
+<td class="blLeistw">31:57</td>
+</tr>
+<tr><td class="blRangg">65.</td>
+<td class="blRangBg">/205</td>
+<td class="blStNrg">250</td>
+<td class="blNameg">Scharg, Birgit</td>
+<td class="blJGg">1966</td>
+<td class="blVereing">Purendure Laufteam</td>
+<td class="blLeistg">32:15</td>
+</tr>
+<tr><td class="blRangw">66.</td>
+<td class="blRangBw">/206</td>
+<td class="blStNrw">264</td>
+<td class="blNamew">Wild, Nadine</td>
+<td class="blJGw">1987</td>
+<td class="blVereinw">Bike Team Regensburg</td>
+<td class="blLeistw">32:18</td>
+</tr>
+<tr><td class="blRangg">67.</td>
+<td class="blRangBg">/207</td>
+<td class="blStNrg">59</td>
+<td class="blNameg">Tausendpfund, Tina</td>
+<td class="blJGg">1968</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">32:23</td>
+</tr>
+<tr><td class="blRangw">68.</td>
+<td class="blRangBw">/210</td>
+<td class="blStNrw">1134</td>
+<td class="blNamew">Bauer, Julia</td>
+<td class="blJGw">1982</td>
+<td class="blVereinw">Ohne Verein</td>
+<td class="blLeistw">32:24</td>
+</tr>
+<tr><td class="blRangg">69.</td>
+<td class="blRangBg">/211</td>
+<td class="blStNrg">1133</td>
+<td class="blNameg">Hartmann, Karin</td>
+<td class="blJGg">1967</td>
+<td class="blVereing">Ohne Verein</td>
+<td class="blLeistg">32:24</td>
+</tr>
+<tr><td class="blRangw">70.</td>
+<td class="blRangBw">/217</td>
+<td class="blStNrw">403</td>
+<td class="blNamew">Silberhorn, Katja</td>
+<td class="blJGw">1978</td>
+<td class="blVereinw">St. Marien-Runners</td>
+<td class="blLeistw">33:00</td>
+</tr>
+<tr><td class="blRangg">71.</td>
+<td class="blRangBg">/218</td>
+<td class="blStNrg">49</td>
+<td class="blNameg">Landmeyer, Claudia</td>
+<td class="blJGg">1979</td>
+<td class="blVereing">Hof</td>
+<td class="blLeistg">33:04</td>
+</tr>
+<tr><td class="blRangw">72.</td>
+<td class="blRangBw">/220</td>
+<td class="blStNrw">454</td>
+<td class="blNamew">Schwarz, Regina</td>
+<td class="blJGw">1990</td>
+<td class="blVereinw">SC Schwandorf</td>
+<td class="blLeistw">33:05</td>
+</tr>
+<tr><td class="blRangg">72.</td>
+<td class="blRangBg">/220</td>
+<td class="blStNrg">455</td>
+<td class="blNameg">Vogl, Tina</td>
+<td class="blJGg">1990</td>
+<td class="blVereing">SC Schwandorf</td>
+<td class="blLeistg">33:05</td>
+</tr>
+<tr><td class="blRangw">74.</td>
+<td class="blRangBw">/225</td>
+<td class="blStNrw">566</td>
+<td class="blNamew">Weber, Anita</td>
+<td class="blJGw">1968</td>
+<td class="blVereinw">FTSV Straubing</td>
+<td class="blLeistw">37:49</td>
+</tr>
+<tr><td class="blRangg">75.</td>
+<td class="blRangBg">/228</td>
+<td class="blStNrg">42</td>
+<td class="blNameg">Havla, Theresa</td>
+<td class="blJGg">1988</td>
+<td class="blVereing">Regensburg</td>
+<td class="blLeistg">40:27</td>
+</tr>
+</tbody></table><br><table class="body" cellpadding="0" cellspacing="0">
+
+
+<br><table class="body" cellspacing="1"><tbody><tr>
+<td class="FussZ">Erstellt mit COSA WIN 2.5.1  --  COSA-Software,
+Berggartenstr. 5a, D-38271 Baddeckenstedt<br>eMail: RenzieSoft@aol.com Home-PAGE: <a class="cosa" href="http://www.cosa-software.de/" target="_blank">www.cosa-software.de</a><br>Lizenz für: BY/3290  LG TELIS FINANZ Regensburg</td>
+</tr></tbody></table>
+</body></html>
